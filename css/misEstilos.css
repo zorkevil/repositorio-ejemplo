@@ -1,0 +1,79 @@
+.divCuadrado {
+    width: 150px;
+    height: 150px;
+}
+
+.fondoRojo {
+    background-color: red;
+}
+
+.fondoAzul {
+    background-color: blue;
+}
+
+.fondoVerde {
+    background-color: green;
+}
+
+.letraBlanca {
+    color: white;
+}
+
+.contenedorFlexible1 {
+    border: solid 2px orange;
+    /* ACA COMENZAMOS A CONFIGURAR EL FLEXBOX */
+    display: flex;
+    flex-direction: row; /* EJE PRINCIPAL => EJE X (VALOR POR DEFECTO!!!) */
+    flex-wrap: nowrap; /* VALOR POR DEFECTO! */
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    flex-flow: row wrap; /* ESTOY DEFINIENDO LA DIRECCION Y EL WRAP!! */
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.contenedorFlexible2 {    
+    border: solid 2px violet;
+    display: flex;
+    flex-direction: column; /* EJE PRINCIPAL => EJE Y */
+    justify-content: center; /* TRABAJA SOBRE EL EJE PRINCIPAL */
+    align-items: center; /* TRABAJA SOBRE EL EJE SECUNDARIO */
+}
+
+.contenedorFlexible3 {
+    border: solid 2px yellow;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.contenedorFlexible4 {
+    border: solid 2px crimson;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.contenedorFlexible {
+    display: flex;
+    flex-direction: column;
+}
+
+.alignSelf {
+    align-self: flex-end;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
